@@ -38,7 +38,16 @@ As it makes sense to you please write the following in JSON format:
 -   Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+<Jason>
+  <cat name="Mr. Kitty" />
+  <roommate name="Dave" />
+  <roommate name="Miller" />
+  <love value="Red Sox" />
+  <love value="Patriots" />
+  <love value="Bruins" />
+  <address value="123 Fake Street" />
+  <address value="2 Muchinfo Road" />
+</Jason>
 ```
 
 I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +55,18 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+<Jason>
+  <cat name="Mr. Kitty" />
+  <roommate name="Dave" />
+    <goldfish name="Bob" color="red" />
+    <goldfish name="Mr. MagicNibbles" color="yellow" />
+  <roommate name="Miller" />
+  <love value="Red Sox" />
+  <love value="Patriots" />
+  <love value="Bruins" />
+  <address value="123 Fake Street" />
+  <address value="2 Muchinfo Road" />
+</Jason>
 ```
 
 ## JSON Methods
@@ -54,7 +74,8 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+No you cannot. You can reference a method, but you cannot write the method. The
+method referenced would have to be written somewhere other than the JSON.
 ```
 
 ## JSON Comments
@@ -62,5 +83,6 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+No you cannot. Because everything in the JSON is a string, there's no way to
+distinguish between comments and data.
 ```
